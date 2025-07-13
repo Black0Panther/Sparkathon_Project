@@ -12,21 +12,21 @@ function App() {
 
 const items = [
     {
-        name:"Dmart",
-        address:"A-101, Green Valley Apartments, Sector 62, Noida, Uttar Pradesh - 201301",
+        name:"Walmart",
+        address:"0.6 miles away",
         image : "/images/store1.png",
          products: [
-      { img: "/images/deodrant.webp", name: "Deodrant", price: 40 },
-      { img: "/images/bread.jpg", name: "Bread", price: 60 },
-      { img: "/images/facewash.webp", name: "Facewash", price: 150 },
-            { img: "/images/noodles.webp", name: "Noodles", price: 120 },
-                  { img: "/images/scrubber.webp", name: "Scrubber", price: 40 },
+      { img: "/images/deodrant.webp", name: "Deodrant", price: 40 , dprice:36 },
+      { img: "/images/bread.jpg", name: "Bread", price: 60 , dprice:51 },
+      { img: "/images/facewash.webp", name: "Facewash", price: 150 ,dprice:112.5 },
+            { img: "/images/noodles.webp", name: "Noodles", price: 120 , dprice:105.6 },
+                  { img: "/images/scrubber.webp", name: "Scrubber", price: 40 ,dprice:36},
     ],
     },
     {
       
-        name:"15 AD",
-        address:"Flat No. 12B, Sai Residency, MG Road, Pune, Maharashtra - 411001",
+        name:"Dmart",
+        address:"1 miles away",
         image : "/images/store2.png",
          products: [
       { img: "/images/soap.webp", name: "Soap", price: 70 },
@@ -39,15 +39,15 @@ const items = [
     },
     { 
         name:"Reliance",
-        address:"House No. 56, 5th Cross, JP Nagar, Bengaluru, Karnataka - 560078",
+        address:"1.2 miles away",
         image : "/images/store4.png",},
         { 
         name:"Fresh food",
-        address:"1st Floor, Royal Chambers, Banjara Hills, Hyderabad, Telangana - 500034",
+        address:"1.4 miles away",
         image : "/images/store3.png",},
         { 
         name:"Home essential",
-        address:"1.8 miles away",
+        address:"1.7 miles away",
         image : "/images/store5.png",}
 ]
   return (
