@@ -8,6 +8,8 @@ import Instore from './Components/Instore'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Store from './Components/Store'
 import Feedback from './Components/Feedback'
+import Navigation from './Components/Navigation'
+import Navigation2 from './Components/Navigation2'
 function App() {
 
 const items = [
@@ -17,10 +19,11 @@ const items = [
         image : "/images/store1.png",
          products: [
       { img: "/images/deodrant.webp", name: "Deodrant", price: 40 , dprice:36 },
-      { img: "/images/bread.jpg", name: "Bread", price: 60 , dprice:51 },
+                       { img: "/images/juice.webp", name: "Juice", price: 60 , dprice : 51 },
       { img: "/images/facewash.webp", name: "Facewash", price: 150 ,dprice:112.5 },
             { img: "/images/noodles.webp", name: "Noodles", price: 120 , dprice:105.6 },
                   { img: "/images/scrubber.webp", name: "Scrubber", price: 40 ,dprice:36},
+                    { img: "/images/bread.jpg", name: "Bread", price: 60 , dprice:51 },
     ],
     },
     {
@@ -31,7 +34,7 @@ const items = [
          products: [
       { img: "/images/soap.webp", name: "Soap", price: 70 },
             { img: "/images/salt.webp", name: "Salt", price: 110 },
-                  { img: "/images/juice.webp", name: "Juice", price: 80 },
+             { img: "/images/bread.jpg", name: "Bread", price: 60 , dprice:51 },
                         { img: "/images/sprite.webp", name: "Sprite", price: 60 },
       { img: "/images/peanut butter.webp", name: "Peanut Butter", price: 140 },
       { img: "/images/milk.jpg", name: "Milk", price: 40 },
@@ -57,6 +60,8 @@ const items = [
     <Route path='/' element={<Stores items={items}/>}></Route>
     <Route path='/store/:storeId' element={<Instore items={items}/>}></Route>
     <Route path='/feedbck' element={<Feedback/>}></Route>
+    <Route path='/navigate' element={<Navigation/>}></Route>
+       <Route path='/navigate2' element={<Navigation2/>}></Route>
    </Routes>
    {/* <Stores></Stores> */}
   

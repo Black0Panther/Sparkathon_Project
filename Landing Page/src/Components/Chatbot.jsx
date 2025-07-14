@@ -1,13 +1,13 @@
  import { FaComments } from "react-icons/fa"; 
+import ChatbotModal from "./ChatbotModal";
+import { useState } from "react";
 
  const Chatbot=()=>{
-  const handleClick = () => {
-    alert("Open Chatbot"); 
-  };
+    const [showModal, setShowModal] = useState(false);
 
- return (
-    <div
-      onClick={handleClick}
+ return <>
+  {!showModal && (<div
+       onClick={() => setShowModal(true)}
       style={{
         position: "fixed",
         bottom: "20px",
@@ -26,8 +26,12 @@
       }}
     >
       <FaComments size={30} />
+
     </div>
- )
+  )}
+    {/* Modal for Chatbot Screenshot */}
+      <ChatbotModal show={showModal} onClose={() => setShowModal(false)} /> 
+    </>
      }
 
      export default Chatbot
