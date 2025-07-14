@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom"
+
 const Instore_item=({products})=>{
 
-
+const nav = useNavigate();
     return <>
       
        {products.map((p,idx)=>(
@@ -10,7 +12,7 @@ const Instore_item=({products})=>{
        <h3 className="font-bold">{p.name}</h3>
        <p>₹{p.price}</p>
        <p className="font-s">Aisle 5 Shelf 2</p>
-       <button className="bg-[#0A80ED] text-white px-2 py-1 rounded text-sm cursor-pointer">Navigate</button>
+       <button onClick={()=> nav('/navigate2')} className="bg-[#0A80ED] text-white px-2 py-1 rounded text-sm cursor-pointer">Navigate</button>
      </div>
 
      ))}
